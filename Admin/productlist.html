@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Bài 12: Hướng dẫn tạo trang quản trị (admin): quản lý sản phẩm - Phần 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/admin_style.css" >
+        <script src="../resources/ckeditor/ckeditor.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            // Sử dụng jQuery để nạp nội dung từ header.html và chèn vào div có id "header-content"
+            $(function() {
+              $("#header-content").load("header.html");
+              $("#footer-content").load("footer.html")
+            });
+          </script> 
+    </head>
+<body>
+    <div id="admin-heading-panel">
+        <div class="container">
+            <div class="left-panel">
+                <a href="../index.php"> Xin chào <span>Admin</span>
+            </div>
+            <div class="right-panel">
+                <img height="24" src="../images/home.png" alt="" />
+                <a href="../index.php">Trang chủ</a>
+                <img height="24" src="../images/logout.png" alt="" />
+                <a href="logout.php">Đăng xuất</a>
+            </div>
+        </div>
+    </div>
+    <div id="content-wrapper">
+        <div class="container">
+            <div class="left-menu">
+                <div class="menu-heading">Admin Menu</div>
+                <div class="menu-items">
+                    <ul>
+                        <li><a href="./statistical.html">Thống kê </a></li>
+                        
+                        <li style="font-weight: bold;"><a href="./productlist.html">Sản phẩm</a></li>
+                        <li><a href="./oderlist.html">Đơn hàng</a></li>
+                        <li><a href="./userlist.html">Khách hàng </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <h1>Danh sách sản phẩm</h1>
+        <div class="product-items">
+            <div class="buttons">
+                <a href="./productedit.html">Thêm sản phẩm</a>
+            </div>
+            <table>
+                <thead style="background-color: rgb(181, 245, 245);">
+                  <tr>
+                    <th>Mã sản phẩm</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Hình ảnh</th>
+                    <th>Giá sản phẩm</th>
+                    <th>Sửa</th>
+                    <th>Xóa</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>SP001</td>
+                    <td>Áo thun</td>
+                    <td><img class="product-img" src="https://znews-photo.zingcdn.me/w660/Uploaded/mdf_eioxrd/2021_07_06/2.jpg" alt="Hình ảnh sản phẩm" class="product-image"></td>
+                    
+                    <td>$19.99</td>
+                    <td><a href="./productedit.html" class="button-link">Sửa</a></td>
+                    <td><button class="delete-button">Xóa</button></td>
+                  </tr>
+                  <!-- Thêm các hàng khác nếu cần -->
+                </tbody>
+                <tbody>
+                    <tr>
+                      <td>SP001</td>
+                      <td>Áo thun</td>
+                      <td ><img class="product-img"src="https://i.pinimg.com/736x/7c/b5/49/7cb5492889809cb8303b76b80759f0df.jpg" alt="Hình ảnh sản phẩm" class="product-image"></td>
+                      
+                      <td>$19.99</td>
+                      <td><a href="./productedit.html" class="button-link">Sửa</a></td>
+                      <td><button class="delete-button">Xóa</button></td>
+                    </tr>
+                    <!-- Thêm các hàng khác nếu cần -->
+                  </tbody>
+              </table>
+              <!-- <ul>
+                <li class="product-item-heading">
+                    <div class="product-prop product-img">Mã sản phẩm </div>
+                    <div class="product-prop product-img">Ảnh</div>
+                    <div class="product-prop product-name">Tên </div>
+                    <div class="product-prop product-button">
+                        Xóa
+                    </div>
+                    <div class="product-prop product-button">
+                        Sửa
+                    </div>
+                    <div class="product-prop product-time"></div>
+                    <div class="product-prop product-time">Ngày cập nhật</div>
+                    <div class="clear-both"></div>
+                </li>
+                    <li>
+                        <div class="product-prop product-img"><img src="" alt=""  /></div>
+                        <div class="product-prop product-name"></div>
+                        <div class="product-prop product-button">
+                            <button class="delete-button">Xóa</button>
+                        </div>
+                        <div class="product-prop product-button">
+                            <a href="./productedit.html" class="button-link">Sửa</a>
+                        </div>
+                        <div class="product-prop product-time"></div>
+                        <div class="product-prop product-time">Giá sản phẩm </div>
+                        <div class="clear-both"></div>
+                    </li>
+            </ul> -->
+            <div class="clear-both"></div>
+        </div>
+    </div>
+    
+<div class="clear-both"></div>
+
+
+  
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Bài 12: Hướng dẫn tạo trang quản trị (admin): quản lý sản phẩm - Phần 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/admin_style.css" >
+        <script src="../resources/ckeditor/ckeditor.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            // Sử dụng jQuery để nạp nội dung từ header.html và chèn vào div có id "header-content"
+            $(function() {
+              $("#header-content").load("header.html");
+              $("#footer-content").load("footer.html")
+            });
+          </script> 
+    </head>
+<body>
+    <div id="header-content"></div>
+    <div class="main-content">
+        <h1>Thêm người dùng </h1>
+        <div id="content-box">
+        <form id="product-form" method="POST" action="?action=add"  enctype="multipart/form-data">
+            <input type="submit" title="Lưu sản phẩm" value="" />
+            <div class="clear-both"></div>
+            <div class="wrap-field">
+                <label>ID:</label>
+                <input type="text" name="name" value=""/>
+            <div class="clear-both"></div>
+            </div>
+            <div class="wrap-field">
+                <label>Tên người dùng:</label>
+                <input type="text" name="name" value=""/>
+            <div class="clear-both"></div>
+            </div>
+            <div class="wrap-field">
+                <label>Năm sinh :</label>
+                <input type="text" name="name" value=""/>
+            <div class="clear-both"></div>
+            </div>
+            <div class="wrap-field">
+                <label>Tài khoản:</label>
+                <input type="text" name="name" value=""/>
+            <div class="clear-both"></div>
+            </div>
+            <div class="wrap-field">
+                <label>Mật khẩu :</label>
+                <input type="text" name="name" value=""/>
+            <div class="clear-both"></div>
+            </div>
+        </form>
+        </div>
+    </div>        

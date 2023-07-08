@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Bài 12: Hướng dẫn tạo trang quản trị (admin): quản lý sản phẩm - Phần 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/admin_style.css" >
+        <script src="../resources/ckeditor/ckeditor.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            // Sử dụng jQuery để nạp nội dung từ header.html và chèn vào div có id "header-content"
+            $(function() {
+              $("#header-content").load("header.html");
+              $("#footer-content").load("footer.html")
+            });
+          </script> 
+    </head>
+<body>
+  <div id="admin-heading-panel">
+    <div class="container">
+        <div class="left-panel">
+          <a href="../index.php"> Xin chào <span>Admin</span>
+        </div>
+        <div class="right-panel">
+            <img height="24" src="../images/home.png" alt="" />
+            <a href="../index.php">Trang chủ</a>
+            <img height="24" src="../images/logout.png" alt="" />
+            <a href="logout.php">Đăng xuất</a>
+        </div>
+    </div>
+</div>
+<div id="content-wrapper">
+    <div class="container">
+        <div class="left-menu">
+            <div class="menu-heading">Admin Menu</div>
+            
+            <div class="menu-items"> 
+                <ul>
+                  <li><a href="./statistical.html">Thống kê </a></li>
+                  
+                    
+                    <li><a href="./productlist.html">Sản phẩm</a></li>
+                    <li style="font-weight: bold"><a href="./oderlist.html">Đơn hàng</a></li>
+                    <li><a href="./userlist.html">Khách hàng</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="main-content">
+        <h1>Danh sách đơn hàng </h1>
+        <div class="product-items">
+            
+          <table>
+            <thead>
+              <tr>
+                <th>Mã đơn hàng</th>
+                <th>Tên khách hàng</th>
+                <th>Số điện thoại</th>
+                <th>Địa chỉ </th>
+                <th>Tổng tiền </th>
+                <th>Xem chi tiết</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>SP001</td>
+                <td>ngoc anh</td>
+                <td>123445</td>
+                <td>hà nội </td>
+                <td>$19.99</td>
+                <td><a href="./oderdetail.html" class="button-link">Xem chi tiết </a></td>
+                    
+              </tr>
+              <!-- Thêm các hàng khác nếu cần -->
+            </tbody>
+          </table>
+            <!-- <?php
+            include './pagination.php';
+            ?> -->
+            <div class="clear-both"></div>
+        </div>
+    </div>
